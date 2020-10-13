@@ -38,6 +38,7 @@ class _IslamicPrayerTimesState extends State<IslamicPrayerTimes> {
       setState(() {
         _currentPosition = position;
       });
+      // print(_currentPosition);
       _getAddressFromLatLng();
     }).catchError((e) {
       print('error location : $e');
